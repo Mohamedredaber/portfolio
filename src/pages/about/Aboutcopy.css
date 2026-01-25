@@ -1,0 +1,247 @@
+:root {
+  --bg-dark: #0f172a;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --border: rgba(148, 163, 184, 0.16);
+  --primary: #6366f1;
+}
+
+.about-page {
+  background: var(--bg-dark);
+  color: var(--text-main);
+  padding: 80px 20px;
+  min-height: 100vh;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-title {
+  font-size: 2.6rem;
+  font-weight: 900;
+  background: linear-gradient(to right, #60a5fa, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 10px;
+}
+
+.about-subtitle {
+  color: var(--text-muted);
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.about-actions {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-main);
+  padding: 12px 16px;
+  border-radius: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  border-color: rgba(99, 102, 241, 0.45);
+}
+
+.btn.primary {
+  background: rgba(99, 102, 241, 0.18);
+  border-color: rgba(99, 102, 241, 0.45);
+}
+
+.btn .arrow {
+  opacity: 0.9;
+}
+
+.btn .dl {
+  font-size: 14px;
+}
+
+/* GRID */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 18px;
+}
+
+/* Cards */
+.about-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px;
+  backdrop-filter: blur(10px);
+  transition: 0.2s;
+}
+
+.about-card:hover {
+  border-color: rgba(99, 102, 241, 0.35);
+  box-shadow: 0 14px 40px -22px rgba(99, 102, 241, 0.45);
+}
+
+.card-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: rgba(99, 102, 241, 0.18);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.card-text {
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin: 0 0 12px;
+}
+
+/* Timeline */
+.timeline {
+  display: grid;
+  gap: 14px;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin-top: 6px;
+  border-radius: 999px;
+  background: #60a5fa;
+  box-shadow: 0 0 0 5px rgba(96, 165, 250, 0.12);
+}
+
+.dot-purple {
+  background: #a78bfa;
+  box-shadow: 0 0 0 5px rgba(167, 139, 250, 0.12);
+}
+
+.timeline-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.timeline-title {
+  margin: 0;
+  font-weight: 800;
+  font-size: 0.98rem;
+}
+
+.timeline-period {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.timeline-place {
+  margin: 4px 0 4px;
+  color: #c7d2fe;
+  font-size: 0.9rem;
+}
+
+.timeline-desc {
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.55;
+  font-size: 0.92rem;
+}
+
+/* Achievements */
+.ach-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.ach-item {
+  display: flex;
+  gap: 10px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.ach-bullet {
+  color: #60a5fa;
+  font-weight: 900;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-title {
+    font-size: 2.1rem;
+  }
+  .about-page {
+    padding: 50px 16px;
+  }
+}
+
+
+.about-page.rtl {
+  direction: rtl;
+}
+
+.about-page.rtl .timeline-item {
+  grid-template-columns: 1fr 18px;
+}
+
+.about-page.rtl .timeline-top {
+  flex-direction: row-reverse;
+}
+
+.about-page.rtl .ach-item {
+  flex-direction: row-reverse;
+}
+
+.about-page.rtl .card-head {
+  flex-direction: row-reverse;
+}

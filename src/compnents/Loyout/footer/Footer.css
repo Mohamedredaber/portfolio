@@ -1,0 +1,94 @@
+.footer {
+  background-color: var(--bg-dark);
+  border-top: 1px solid var(--border-subtle);
+  padding: 60px 24px 30px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+/* Logo & Statut */
+.footer-logo {
+  font-weight: 800;
+  letter-spacing: -1px;
+  font-size: 1.2rem;
+  background: linear-gradient(to right, #fff, var(--text-muted));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #10b981; /* Vert succès */
+  border-radius: 50%;
+  box-shadow: 0 0 8px #10b981;
+}
+
+/* Socials */
+.footer-socials {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-socials a {
+  color: var(--text-muted);
+  font-size: 1.3rem;
+  transition: var(--transition);
+}
+
+.footer-socials a:hover {
+  color: var(--primary);
+  transform: translateY(-3px);
+}
+
+/* Bottom Part */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.footer-stack-info span {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+/* RTL Support */
+.rtl { direction: rtl; }
+.rtl .footer-top { flex-direction: row; }
+
+@media (max-width: 600px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}

@@ -147,27 +147,6 @@
   text-decoration: none;
 }
 
-.btn.primary {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.95), rgba(168, 85, 247, 0.95));
-  color: white;
-  border-color: rgba(99, 102, 241, 0.40);
-}
-
-.btn.primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(99, 102, 241, 0.18);
-}
-
-.btn.ghost {
-  background: rgba(255, 255, 255, 0.03);
-  color: #e5e7eb;
-}
-
-.btn.ghost:hover {
-  transform: translateY(-2px);
-  border-color: rgba(99, 102, 241, 0.55);
-}
-
 .arrow {
   font-size: 16px;
 }
@@ -187,9 +166,9 @@
 }
 .rtl .hero-actions {
   justify-content: flex-start;
+
 }
 
-/* Responsive */
 @media (max-width: 950px) {
   .hero-grid {
     grid-template-columns: 1fr;

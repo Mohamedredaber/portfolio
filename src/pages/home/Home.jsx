@@ -1,6 +1,7 @@
 import { useMemo } from "react";
-import { useNavigate } from "react-router-dom";
 import heroData from "../../data/heroData";
+import ButtonvievProject from "../../compnents/common/ButtonvievProject";
+import BtnDownload from "../../compnents/common/BtnDownload";
 import { useSelector } from "react-redux";
 import "./Home.css";
 
@@ -9,7 +10,7 @@ export default function Home() {
 
   const t = useMemo(() => heroData[lang] || heroData.en, [lang]);
   const isArabic = lang === "ar";
-  const navigate = useNavigate();
+
   return (
     <section className={`hero-page ${isArabic ? "rtl" : ""}`}>
       <div className="hero-wrap">
@@ -24,7 +25,6 @@ export default function Home() {
               />
             </div>
           </div>
-
           <div className="hero-content">
             <span className="hero-badge">{t.badge}</span>
 
@@ -37,13 +37,8 @@ export default function Home() {
             <p className="hero-desc">{t.desc}</p>
 
             <div className="hero-actions">
-              <button className="btn primary" onClick={() => navigate("/projects")}>
-                {t.btnProjects} <span className="arrow">→</span>
-              </button>
-
-              <a className="btn ghost" href="/images/cv/CV.pdf" download>
-                <span className="dl">⬇</span> {t.btnCV}
-              </a>
+              <ButtonvievProject />
+              <BtnDownload />
             </div>
           </div>
         </div>
