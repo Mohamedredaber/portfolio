@@ -1,37 +1,18 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import heroData from "../../data/heroData";
+import { useSelector } from "react-redux";
 import "./Home.css";
 
 export default function Home() {
-  const [lang, setLang] = useState("en"); // "en" | "fr" | "ar"
-  const t = useMemo(() => heroData[lang], [lang]);
+  const lang = useSelector((state) => state.language.langue) || "en";
+
+  const t = useMemo(() => heroData[lang] || heroData.en, [lang]);
   const isArabic = lang === "ar";
   const navigate = useNavigate();
   return (
     <section className={`hero-page ${isArabic ? "rtl" : ""}`}>
       <div className="hero-wrap">
-        <div className="lang-switch">
-          <button
-            className={lang === "en" ? "active" : ""}
-            onClick={() => setLang("en")}
-          >
-            EN
-          </button>
-          <button
-            className={lang === "fr" ? "active" : ""}
-            onClick={() => setLang("fr")}
-          >
-            FR
-          </button>
-          <button
-            className={lang === "ar" ? "active" : ""}
-            onClick={() => setLang("ar")}
-          >
-            AR
-          </button>
-        </div>
-
         <div className="hero-grid">
           <div className="avatar-glow">
             <div className="avatar-ring">
