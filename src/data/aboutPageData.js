@@ -53,7 +53,7 @@ const aboutPageData = {
           {
             title: "Travail en librairie",
             place: "Librairie",
-            period: "1 an",
+            period: "2 ans",
             description:
               "Accueil, organisation, suivi des demandes et gestion quotidienne.",
           },
@@ -138,7 +138,7 @@ const aboutPageData = {
           {
             title: "Bookstore Work",
             place: "Bookstore",
-            period: "1 year",
+            period: "2 years",
             description:
               "Customer service, organization, and daily operations.",
           },
@@ -222,7 +222,7 @@ const aboutPageData = {
           {
             title: "العمل في مكتبة",
             place: "مكتبة",
-            period: "سنة واحدة",
+            period: "سنتين",
             description: "خدمة الزبائن، التنظيم، وتدبير العمل اليومي.",
           },
           {

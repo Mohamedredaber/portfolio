@@ -14,16 +14,23 @@ function About() {
     <section className={`about-page ${isArabic ? "rtl" : ""}`}>
       <div className="about-container">
         
-        {/* 1. HERO SECTION */}
+
         <div className="about-hero">
           <header className="about-header">
             <h1>{t.pageTitle}</h1>
+      
+
             <p className="subtitle">{t.pageSubtitle}</p>
+          
           </header>
 
           <div className="about-cta-main">
+            <div>
+
+
             <ButtonvievProject />
             <Btncontact />
+            </div>
           </div>
         </div>
 

@@ -3,21 +3,21 @@ const skillsPageData = {
     title: "Skills",
     description:
       "Here are my technical skills grouped by category. I'm continuously learning and improving.",
-    items: "items",
+    items: "skills",
   },
 
   fr: {
     title: "Compétences",
     description:
       "Voici mes compétences techniques regroupées par catégorie. Je continue à apprendre et à m’améliorer.",
-    items: "éléments",
+    items: "Compétences",
   },
 
   ar: {
     title: "المهارات",
     description:
       "هذه مهاراتي التقنية مرتبة حسب الفئات. أواصل التعلم والتطور باستمرار.",
-    items: "عنصر",
+    items: "مهارات",
   },
 };
 
