@@ -6,6 +6,7 @@ import NotFound from "../pages/notfound/NotFound";
 import Skills from "../pages/skills/Skills";
 import Projects from "../pages/projects/Projects";
 import Layout from "../compnents/Loyout/Layout";
+import Detalproject from "../pages/projects/detailproject/Detalproject";
 function AppRoutes() {
   return (
     <Routes>
@@ -13,6 +14,7 @@ function AppRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:slug" element={<Detalproject />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/skills" element={<Skills />} />
       </Route>

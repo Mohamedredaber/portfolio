@@ -10,7 +10,7 @@ function BtnDownload() {
     [lang],
   );
   return (
-    <a className="btn ghost" href="/images/cv/CV.pdf" download>
+    <a className="btn ghost" href="/images/cv/cv.pdf" download>
       <span className="dl">⬇</span> {t.btnCV}
     </a>
   );

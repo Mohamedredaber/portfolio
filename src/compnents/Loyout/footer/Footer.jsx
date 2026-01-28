@@ -32,7 +32,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>© {new Date().getFullYear()} — {t.rights}</p>
           <div className="footer-stack-info">
-            Built with <span>React</span> & <span>Redux</span>
+            Built with <span>React</span> & <span>Laravel</span>
           </div>
         </div>
       </div>
