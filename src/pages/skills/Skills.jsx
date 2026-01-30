@@ -31,12 +31,7 @@ export default function Skills() {
   return (
     <section className={`skills-page ${isArabic ? "rtl" : ""}`}>
       <div className="skills-container">
-
-        {/* <header className="skills-header">
-          <h1>{t.title}</h1>
-          <p>{t.description}</p>
-        </header> */}
-
+        <Sectionheader title={t.title} subtitule={t.description}/>
         <div className="skills-categories">
           {categoryOrder.map((catKey) => {
             const categoryItems = grouped[catKey] || [];
