@@ -1,9 +1,8 @@
-import React from "react";
 import {
-  FaGithub,
+//   FaGithub,
   FaLinkedin,
-  FaEnvelope,
-  FaPhoneAlt,
+//   FaEnvelope,
+//   FaPhoneAlt,
   FaUsers,
 } from "react-icons/fa";
 import "./Team.css";
@@ -44,10 +43,10 @@ export default function Team({ team, labels, isArabic }) {
 
       <div className="team-grid">
         {team.members.map((m) => {
-          const github = m?.contact?.github;
+        //   const github = m?.contact?.github;
           const linkedin = m?.contact?.linkedin;
-          const email = m?.contact?.email;
-          const phone = m?.contact?.phone;
+        //   const email = m?.contact?.email;
+        //   const phone = m?.contact?.phone;
           const avatar = m?.avatar;
 
           return (
