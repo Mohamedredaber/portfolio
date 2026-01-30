@@ -75,15 +75,17 @@ const ravecarTeamData = {
 };
 
 
+const base = import.meta.env.BASE_URL;
+
 const urbanImages = {
-  about: "/images/urban/about.PNG",
-  home: "/images/urban/home.PNG",
-  create: "/images/urban/create.PNG",
-  login: "/images/urban/login.PNG",
-  explore: "/images/urban/explore.PNG",
-  exploreConnected: "/images/urban/exploreconnecter.PNG",
-  map: "/images/urban/map.PNG",
-  mapGoogle: "/images/urban/mapgoogle.PNG",
+  about: `${base}images/urban/about.PNG`,
+  home: `${base}images/urban/home.PNG`,
+  create: `${base}images/urban/create.PNG`,
+  login: `${base}images/urban/login.PNG`,
+  explore: `${base}images/urban/explore.PNG`,
+  exploreConnected: `${base}images/urban/exploreconnecter.PNG`,
+  map: `${base}images/urban/map.PNG`,
+  mapGoogle: `${base}images/urban/mapgoogle.PNG`,
 };
 
 const vpnImages = {
