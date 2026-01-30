@@ -3,27 +3,20 @@ import { useMemo } from "react";
 import aboutPageData from "../../data/aboutPageData";
 import ButtonvievProject from "../../compnents/common/ButtonvievProject";
 import Btncontact from "../../compnents/common/Btncontact";
+import Sectionheader from "../../compnents/common/sectionheader/Sectionheader";
 import "./About.css";
 
 function About() {
   const lang = useSelector((state) => state.language.langue) || "en";
   const t = useMemo(() => aboutPageData[lang] || aboutPageData.en, [lang]);
   const isArabic = lang === "ar";
-
   return (
     <section className={`about-page ${isArabic ? "rtl" : ""}`}>
       <div className="about-container">
         
 
         <div className="about-hero">
-          <header className="about-header">
-            <h1>{t.pageTitle}</h1>
-      
-
-            <p className="subtitle">{t.pageSubtitle}</p>
-          
-          </header>
-
+        <Sectionheader title={t.pageTitle} subtitule={t.pageSubtitle}/>
           <div className="about-cta-main">
             <div>
 

@@ -29,29 +29,6 @@
   margin: 0 auto;
 }
 
-/* --- En-tête (Header) --- */
-.skills-header {
-  text-align: center;
-  margin-bottom: 70px;
-}
-
-.skills-header h1 {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
-  font-weight: 800;
-  background: linear-gradient(to right, #818cf8, #6366f1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 20px;
-}
-
-.skills-header p {
-  color: var(--text-muted);
-  font-size: 1.1rem;
-  max-width: 650px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
 /* --- Catégories --- */
 .skills-category {
   margin-bottom: 60px;

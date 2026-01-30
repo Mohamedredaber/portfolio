@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import ScrollToTop from "../hooks/useScrollToTop";
 import Home from "../pages/home/Home";
 import About from "../pages/about/About";
 import Contact from "../pages/contact/Contact";
@@ -9,6 +10,8 @@ import Layout from "../compnents/Loyout/Layout";
 import Detalproject from "../pages/projects/detailproject/Detalproject";
 function AppRoutes() {
   return (
+    <>
+     <ScrollToTop />
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
@@ -20,6 +23,7 @@ function AppRoutes() {
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
+    </>
   );
 }
 

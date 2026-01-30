@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import skillsData from "../../data/skillsData";
 import skillsPageData from "../../data/skillsPageData";
 import "./Skills.css";
-
+import Sectionheader from "../../compnents/common/sectionheader/Sectionheader";
 export default function Skills() {
   const lang = useSelector((state) => state.language.langue) || "en";
   const isArabic = lang === "ar";
@@ -31,10 +31,11 @@ export default function Skills() {
   return (
     <section className={`skills-page ${isArabic ? "rtl" : ""}`}>
       <div className="skills-container">
-        <header className="skills-header">
+
+        {/* <header className="skills-header">
           <h1>{t.title}</h1>
           <p>{t.description}</p>
-        </header>
+        </header> */}
 
         <div className="skills-categories">
           {categoryOrder.map((catKey) => {

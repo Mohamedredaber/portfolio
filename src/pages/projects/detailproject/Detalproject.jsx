@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import { useSelector } from "react-redux";
 import { Link, useParams, Navigate } from "react-router-dom";
 import projectsData from "../../../data/projectsdata";
+import Team from "../team/Team";
 import "./ProjectDetails.css";
 
 function isSafeHttpUrl(url) {
@@ -19,24 +20,19 @@ export default function ProjectDetails() {
 
   const lang = useSelector((state) => state.language.langue) || "en";
   const safeLang = projectsData[lang] ? lang : "en";
-  const t = useMemo(() => projectsData[safeLang], [safeLang]);
-
+  const t = useMemo(() => projectsData[safeLang], [safeLang]);  
   const isArabic = safeLang === "ar";
-
-  // ✅ 1) Chercher le projet dans la liste
   const project = useMemo(() => {
     if (!slug) return null;
     return t.items.find((p) => p.slug === slug) || null;
   }, [t.items, slug]);
 
-  // ✅ 2) Not found → route 404 (ou page NotFound)
   if (!project) {
     return <Navigate to="/404" replace />;
-    // ou: return <div>Not Found</div>;
   }
 
   const labels = t.meta.labels;
-
+  const team = project.team || null; 
   return (
     <section className={`project-details ${isArabic ? "rtl" : ""}`}>
       <div className="details-container">
@@ -50,6 +46,7 @@ export default function ProjectDetails() {
           <h1 className="details-title">{project.title}</h1>
           <p className="details-sub">{project.shortDescription}</p>
         </header>
+        {team && <Team team={team} isArabic={isArabic}  labels ={labels}/>}
 
         <div className="details-hero">
           <img
@@ -129,3 +126,5 @@ export default function ProjectDetails() {
     </section>
   );
 }
+
+

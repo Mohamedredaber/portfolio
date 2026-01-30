@@ -1,0 +1,17 @@
+.mog-signature {
+  display: inline-block;
+  padding: 1px 18px;      
+  border-radius: 80px;
+  background: transparent;
+  border: 2px solid var(--primary);
+  box-shadow: 0 0 10px var(--primary-glow);
+}
+
+.mog-text {
+  font-family: "Pacifico", "Segoe Script", cursive;
+  font-size: 28px;       
+  color: var(--primary);
+  position: relative;
+  letter-spacing: 1.5px;
+}
+

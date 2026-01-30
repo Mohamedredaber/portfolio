@@ -23,27 +23,6 @@
   max-width: 1100px;
   margin: 0 auto;
 }
-
-
-.about-header {
-  text-align: center;
-    margin-bottom: 70px;
-}
-.about-hero { margin-bottom: 60px; }
-.about-header h1 {
- font-size: clamp(2.5rem, 5vw, 3.5rem);
-  font-weight: 800;
-  background: linear-gradient(to right, #818cf8, #6366f1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 20px;
-}
-.about-header .subtitle {
-  font-size: 1.2rem;
-  color: var(--text-muted);
-  max-width: 700px;
-  margin: 0 auto;   
-}
 .about-cta-main {
   display: flex;
   justify-content: center;

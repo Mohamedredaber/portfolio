@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { Mail, Phone, MapPin } from "lucide-react";
 import emailjs from "@emailjs/browser";
 import contactPageData from "../../data/contactPageData";
+import Sectionheader from "../../compnents/common/sectionheader/Sectionheader";
 import "./Contact.css";
 
 export default function Contact() {
@@ -54,22 +55,23 @@ export default function Contact() {
   return (
     <section className={`contact-page ${isArabic ? "rtl" : ""}`}>
       <div className="contact-container">
-        <header className="contact-header">
-          <h1 className="contact-title">{t.pageTitle}</h1>
-          <p className="contact-subtitle">{t.pageSubtitle}</p>
+            <header  className="contact-header">
+                <Sectionheader title={t.pageTitle} subtitule={t.pageSubtitle} />
           <p className="contact-intro">{t.intro}</p>
-        </header>
+            </header>
 
         <div className="contact-grid">
           <aside className="contact-card">
             <h2 className="card-title">{t.pageTitle}</h2>
 
-            <div className="info-list">
+            <div className={`info-list ${isArabic && 'rtl'} `}>
               <div className="info-item">
                 <div className="info-icon"><Mail size={20} /></div>
                 <div className="info-text">
                   <span className="info-label">{t.info.emailLabel}</span>
-                  <a className="info-value" href={`mailto:${t.info.emailValue}`}>
+                  <a className="info-value" href={`mailto:${t.info.emailValue}`} 
+               onClick={(e) => e.preventDefault()} 
+                  >
                     {t.info.emailValue}
                   </a>
                 </div>

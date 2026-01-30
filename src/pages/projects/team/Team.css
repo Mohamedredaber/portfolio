@@ -1,0 +1,119 @@
+.team-card {
+  margin-top: 14px;
+}
+
+.team-card.rtl {
+  direction: rtl;
+}
+
+.team-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.team-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.team-head-text .team-sub {
+  margin: 4px 0 0;
+  opacity: 0.8;
+  font-size: 0.95rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.team-member {
+  border-radius: 16px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.member-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.member-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+}
+
+.member-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-initial {
+  font-weight: 800;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.member-name {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.member-role {
+  margin: 4px 0 0;
+  opacity: 0.85;
+  font-size: 0.92rem;
+}
+
+.member-desc {
+  margin: 12px 0;
+  opacity: 0.85;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.member-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contact-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.contact-pill:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.06);
+}

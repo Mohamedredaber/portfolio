@@ -27,22 +27,7 @@
   margin-bottom: 36px;
 }
 
-.contact-title {
-font-size: clamp(2.5rem, 5vw, 3.5rem);
-  font-weight: 800;
-  background: linear-gradient(to right, #818cf8, #6366f1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 20px;
-}
 
-.contact-subtitle {
-  color: var(--muted);
-  margin: 0 auto;
-  max-width: 760px;
-  line-height: 1.7;
-  font-size: 1.05rem;
-}
 
 .contact-intro {
   color: rgba(203, 213, 225, 0.92);
@@ -87,6 +72,9 @@ font-size: clamp(2.5rem, 5vw, 3.5rem);
   display: grid;
   gap: 12px;
   margin-top: 10px;
+}
+.info-list.rtl{
+  direction: ltr;
 }
 
 .info-item {

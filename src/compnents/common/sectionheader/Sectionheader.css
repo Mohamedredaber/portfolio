@@ -1,0 +1,19 @@
+.section-header {
+  text-align: center;
+    margin-bottom: 70px;
+}
+.about-hero { margin-bottom: 60px; }
+.section-header h1 {
+ font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  background: linear-gradient(to right, #818cf8, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+.section-header .subtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: 0 auto;   
+}

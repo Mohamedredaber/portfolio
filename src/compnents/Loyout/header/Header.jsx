@@ -2,14 +2,15 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { updateLanguage } from "../../../features/language/languageslice";
+import Logo from "../logo/logo";
 import "./Header.css";
+
 
 const labels = {
   en: { home: "Home", about: "About", skills: "Skills", projects: "Projects", contact: "Contact" },
   fr: { home: "Accueil", about: "À propos", skills: "Compétences", projects: "Projets", contact: "Contact" },
   ar: { home: "الرئيسية", about: "نبذة", skills: "المهارات", projects: "المشاريع", contact: "تواصل" },
 };
-
 export default function Header() {
   const [open, setOpen] = useState(false);
   const dispatch = useDispatch();
@@ -26,7 +27,8 @@ export default function Header() {
     <header className={`site-header ${isRTL ? "rtl" : ""}`}>
       <div className="site-header__container">
         <NavLink to="/" className="site-header__logo" onClick={() => setOpen(false)}>
-          Portfolio
+        <Logo/>
+
         </NavLink>
 
         {/* Desktop */}

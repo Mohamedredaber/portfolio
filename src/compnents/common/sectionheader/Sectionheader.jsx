@@ -1,8 +1,13 @@
 import React from 'react'
-
-function Sectionheader() {
+import './Sectionheader.css'
+function Sectionheader({title,subtitule}) {
   return (
-    <div>Sectionheader</div>
+
+        <header className="section-header">
+            <h1>{title}</h1>
+            <p className="subtitle">{subtitule}</p>
+          </header>
+
   )
 }
 
