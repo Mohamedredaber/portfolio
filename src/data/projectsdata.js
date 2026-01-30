@@ -1,5 +1,5 @@
 const ravecarTeamData = {
-  ar: { 
+  ar: {
     title: "فريق العمل",
     subtitle: "هذا المشروع تم إنجازه بشكل جماعي ضمن فريق تطوير RAVECAR",
 
@@ -12,15 +12,14 @@ const ravecarTeamData = {
           "ساهم في تطوير منصة RAVECAR من حيث منطق التطبيق، التعامل مع قاعدة البيانات، ونظام التسجيل والتحقق عبر البريد الإلكتروني.",
 
         contact: {
-          email: "fouad.bakkali@email.com",
-          phone: "+212 6 00 00 00 00",
-          github: "https://github.com/fouadbakkali",
+          email: "",
+          phone: "",
+          github: "",
           linkedin: "https://www.linkedin.com/in/fouad-bekkali-50a465384/",
         },
 
         avatar: "",
       },
-      
     ],
   },
 
@@ -37,15 +36,14 @@ const ravecarTeamData = {
           "A contribué au développement de la plateforme RAVECAR, notamment la logique applicative, la base de données et le système d’inscription avec vérification par email.",
 
         contact: {
-          email: "fouad.bakkali@email.com",
-          phone: "+212 6 00 00 00 00",
-          github: "https://github.com/fouadbakkali",
-           linkedin: "https://www.linkedin.com/in/fouad-bekkali-50a465384/",
+          email: "",
+          phone: "",
+          github: "",
+          linkedin: "https://www.linkedin.com/in/fouad-bekkali-50a465384/",
         },
 
         avatar: "",
       },
-      
     ],
   },
 
@@ -62,19 +60,91 @@ const ravecarTeamData = {
           "Contributed to the development of the RAVECAR platform, including business logic, database management, and email verification system.",
 
         contact: {
-          email: "fouad.bakkali@email.com",
-          phone: "+212 6 00 00 00 00",
-          github: "https://github.com/fouadbakkali",
+          email: "",
+          phone: "",
+          github: "",
           linkedin: "https://www.linkedin.com/in/fouad-bekkali-50a465384/",
         },
 
         avatar: "",
-      },     
+      },
     ],
   },
 };
 
+const vpnTeamData = {
+  ar: {
+    title: "فريق العمل",
+    subtitle: "هذا المشروع تم إنجازه بشكل جماعي ضمن فريق تطوير RAVECAR",
 
+    members: [
+      {
+        id: 1,
+        name: "محمد الصمدي",
+        role: "مطور ويب (Backend & Frontend)",
+        description:
+          "ساهم في تطوير منصة Top 7 VPN، خاصة في تصميم الواجهة وهيكلة المشروع بشكل عام.",
+
+        contact: {
+          email: "",
+          phone: "",
+          github: "",
+          linkedin: "https://www.linkedin.com/in/mohamed-samadi-11146b384/",
+        },
+
+        avatar: "",
+      },
+    ],
+  },
+
+  fr: {
+    title: "Équipe du projet",
+    subtitle: "Ce projet a été réalisé en collaboration par l’équipe RAVECAR",
+
+    members: [
+      {
+        id: 1,
+        name: "Mohamed samadi",
+        role: "Développeur Web (Backend & Frontend)",
+        description:
+          "A contribué au développement de la plateforme Top 7 VPN, notamment au design de l’interface et à l’architecture générale du projet. ",
+
+        contact: {
+          email: "",
+          phone: "",
+          github: "https://github.com/fouadbakkali",
+          linkedin: "https://www.linkedin.com/in/mohamed-samadi-11146b384/",
+        },
+
+        avatar: "",
+      },
+    ],
+  },
+
+  en: {
+    title: "Project Team",
+    subtitle: "This project was developed collaboratively by the RAVECAR team",
+
+    members: [
+      {
+        id: 1,
+        name: "Mohamed samadi",
+        role: "Web Developer (Backend & Frontend)",
+        description:
+          "Contributed to the development of the Top 7 VPN platform, including the user interface design and the overall project architecture.",
+
+        contact: {
+          email: "",
+          phone: "",
+          github: "https://github.com/fouadbakkali",
+          linkedin: "https://www.linkedin.com/in/mohamed-samadi-11146b384/",
+        },
+
+        avatar: "",
+      },
+    ],
+  },
+};
 const base = import.meta.env.BASE_URL;
 
 const urbanImages = {
@@ -114,9 +184,10 @@ const ravecarImages = {
 const projectLinks = {
   urban: { github: "https://github.com/Mohamedredaber/urbanexplorer" },
   vpn: { github: "https://github.com/Mohamedredaber/vpnprojet" },
-  ravecar: { github: "https://github.com/Mohamedredaber/agences_location_platform" }, 
+  ravecar: {
+    github: "https://github.com/Mohamedredaber/agences_location_platform",
+  },
 };
-
 
 const projectsEN = [
   {
@@ -254,6 +325,7 @@ const projectsEN = [
     category: "Website",
     status: "Completed",
     date: "2024",
+    team: vpnTeamData.en,
   },
 
   {
@@ -265,7 +337,14 @@ const projectsEN = [
     coverImage: ravecarImages.home,
     fullDescription:
       "RAVECAR is a web platform designed for car rental in Morocco. It connects rental agencies with customers looking for reliable vehicles. Customers can browse cars, apply advanced filters (brand, price, category, fuel type, gearbox, color, seats), view detailed vehicle pages with image carousel, choose rental dates, and book via WhatsApp contact. Agencies have a secure dashboard to sign up, verify email with OTP (PHPMailer), publish and edit vehicles through a multi-step form, upload images, and manage rental availability and listings.",
-    technologies: ["PHP (Native)", "JavaScript", "MySQL", "PHPMailer", "HTML", "CSS"],
+    technologies: [
+      "PHP (Native)",
+      "JavaScript",
+      "MySQL",
+      "PHPMailer",
+      "HTML",
+      "CSS",
+    ],
     features: [
       "Multi-role system (Customer / Agency)",
       "Agency signup with profile info + logo upload",
@@ -350,7 +429,7 @@ const projectsEN = [
     category: "Web Application",
     status: "Completed",
     date: "2026",
-    team : ravecarTeamData.en
+    team: ravecarTeamData.en,
   },
 ];
 
@@ -495,6 +574,7 @@ const projectsFR = [
     category: "Site Web",
     status: "Terminé",
     date: "2024",
+    team: vpnTeamData.fr,
   },
 
   // RAVECAR
@@ -507,7 +587,14 @@ const projectsFR = [
     coverImage: ravecarImages.home,
     fullDescription:
       "RAVECAR est une plateforme web dédiée à la location de voitures au Maroc. Elle met en relation des agences de location et des clients à la recherche de véhicules fiables. Côté client : consultation du catalogue, filtres avancés (marque, prix, catégorie, carburant, boîte, couleur, places), page détail avec carousel d’images, choix des dates et réservation via WhatsApp. Côté agence : espace sécurisé avec inscription, vérification email par code OTP (PHPMailer), tableau de bord pour publier/modifier des véhicules via un formulaire multi-étapes, upload d’images et gestion de la disponibilité.",
-    technologies: ["PHP (Natif)", "JavaScript", "MySQL", "PHPMailer", "HTML", "CSS"],
+    technologies: [
+      "PHP (Natif)",
+      "JavaScript",
+      "MySQL",
+      "PHPMailer",
+      "HTML",
+      "CSS",
+    ],
     features: [
       "Système multi-rôles (Client / Agence)",
       "Inscription agence avec infos + upload logo",
@@ -584,15 +671,14 @@ const projectsFR = [
       {
         image: ravecarImages.contact,
         title: "Contact",
-        description:
-          "Page contact avec formulaire pour demandes et support.",
+        description: "Page contact avec formulaire pour demandes et support.",
       },
     ],
     links: projectLinks.ravecar,
     category: "Application Web",
     status: "Terminé",
     date: "2026",
-    team : ravecarTeamData.fr
+    team: ravecarTeamData.fr,
   },
 ];
 
@@ -617,14 +703,54 @@ const projectsAR = [
       "عرض المسار مع المسافة والمدة",
     ],
     gallery: [
-      { image: urbanImages.home, title: "الصفحة الرئيسية", description: "واجهة البداية التي تشرح هدف المشروع وتوفر تنقلاً بسيطاً وواضحاً نحو أهم خصائص المنصة." },
-      { image: urbanImages.create, title: "إنشاء حساب", description: "صفحة إنشاء حساب للمستخدمين الجدد للوصول إلى الخصائص المخصصة مثل المفضلة والإعجابات." },
-      { image: urbanImages.login, title: "تسجيل الدخول", description: "صفحة تسجيل الدخول للوصول إلى الحساب وإدارة المفضلة والإعجابات والتفضيلات." },
-      { image: urbanImages.explore, title: "استكشاف (زائر)", description: "تعرض هذه الصفحة الأماكن وتفاصيلها، لكن للتفاعل ورؤية المواقع على الخريطة يجب تسجيل الدخول أو إنشاء حساب." },
-      { image: urbanImages.exploreConnected, title: "استكشاف (مستخدم)", description: "نتائج البحث مع الفلاتر للمستخدم المسجل: عرض الأماكن على الخريطة، الإعجاب بها وإضافتها إلى المفضلة." },
-      { image: urbanImages.map, title: "المسار", description: "صفحة تعرض المسار على خريطة تفاعلية بين موقع المستخدم الحالي والوجهة المختارة مع المسافة والوقت المتوقع." },
-      { image: urbanImages.mapGoogle, title: "تكامل Google Maps", description: "توضح هذه الصفحة تكامل Google Maps داخل المشروع لعرض المسارات والاتجاهات نحو الأماكن." },
-      { image: urbanImages.about, title: "حول المشروع", description: "صفحة تقديم المشروع: الفكرة، القيمة المضافة، ونظرة عامة على أهم الوظائف." },
+      {
+        image: urbanImages.home,
+        title: "الصفحة الرئيسية",
+        description:
+          "واجهة البداية التي تشرح هدف المشروع وتوفر تنقلاً بسيطاً وواضحاً نحو أهم خصائص المنصة.",
+      },
+      {
+        image: urbanImages.create,
+        title: "إنشاء حساب",
+        description:
+          "صفحة إنشاء حساب للمستخدمين الجدد للوصول إلى الخصائص المخصصة مثل المفضلة والإعجابات.",
+      },
+      {
+        image: urbanImages.login,
+        title: "تسجيل الدخول",
+        description:
+          "صفحة تسجيل الدخول للوصول إلى الحساب وإدارة المفضلة والإعجابات والتفضيلات.",
+      },
+      {
+        image: urbanImages.explore,
+        title: "استكشاف (زائر)",
+        description:
+          "تعرض هذه الصفحة الأماكن وتفاصيلها، لكن للتفاعل ورؤية المواقع على الخريطة يجب تسجيل الدخول أو إنشاء حساب.",
+      },
+      {
+        image: urbanImages.exploreConnected,
+        title: "استكشاف (مستخدم)",
+        description:
+          "نتائج البحث مع الفلاتر للمستخدم المسجل: عرض الأماكن على الخريطة، الإعجاب بها وإضافتها إلى المفضلة.",
+      },
+      {
+        image: urbanImages.map,
+        title: "المسار",
+        description:
+          "صفحة تعرض المسار على خريطة تفاعلية بين موقع المستخدم الحالي والوجهة المختارة مع المسافة والوقت المتوقع.",
+      },
+      {
+        image: urbanImages.mapGoogle,
+        title: "تكامل Google Maps",
+        description:
+          "توضح هذه الصفحة تكامل Google Maps داخل المشروع لعرض المسارات والاتجاهات نحو الأماكن.",
+      },
+      {
+        image: urbanImages.about,
+        title: "حول المشروع",
+        description:
+          "صفحة تقديم المشروع: الفكرة، القيمة المضافة، ونظرة عامة على أهم الوظائف.",
+      },
     ],
     links: projectLinks.urban,
     category: "تطبيق ويب",
@@ -653,20 +779,47 @@ const projectsAR = [
       "زر الرجوع للأعلى",
     ],
     gallery: [
-      { image: vpnImages.home, title: "الصفحة الرئيسية", description: "واجهة البداية التي تعرض فكرة الموقع مع تصميم بسيط وقائمة تنقل واضحة." },
-      { image: vpnImages.review, title: "قائمة المراجعات", description: "بطاقات VPN مرتبة مع نقاط وتقييم بالنجوم وأزرار CTA." },
-      { image: vpnImages.detailsReview, title: "تفاصيل المراجعة", description: "صفحة تفاصيل منظمة تعرض معلومات VPN مع تقييم وجدول محتويات." },
-      { image: vpnImages.blog, title: "المدونة", description: "صفحة مقالات تعرض بطاقات مع عنوان وتاريخ وملخص." },
-      { image: vpnImages.about, title: "من نحن", description: "صفحة تعريف بالمشروع وسبب اختيار موضوع الأمان والخصوصية." },
-      { image: vpnImages.contact, title: "تواصل", description: "صفحة تواصل بنموذج بسيط لإرسال الاستفسارات." },
+      {
+        image: vpnImages.home,
+        title: "الصفحة الرئيسية",
+        description:
+          "واجهة البداية التي تعرض فكرة الموقع مع تصميم بسيط وقائمة تنقل واضحة.",
+      },
+      {
+        image: vpnImages.review,
+        title: "قائمة المراجعات",
+        description: "بطاقات VPN مرتبة مع نقاط وتقييم بالنجوم وأزرار CTA.",
+      },
+      {
+        image: vpnImages.detailsReview,
+        title: "تفاصيل المراجعة",
+        description:
+          "صفحة تفاصيل منظمة تعرض معلومات VPN مع تقييم وجدول محتويات.",
+      },
+      {
+        image: vpnImages.blog,
+        title: "المدونة",
+        description: "صفحة مقالات تعرض بطاقات مع عنوان وتاريخ وملخص.",
+      },
+      {
+        image: vpnImages.about,
+        title: "من نحن",
+        description: "صفحة تعريف بالمشروع وسبب اختيار موضوع الأمان والخصوصية.",
+      },
+      {
+        image: vpnImages.contact,
+        title: "تواصل",
+        description: "صفحة تواصل بنموذج بسيط لإرسال الاستفسارات.",
+      },
     ],
     links: projectLinks.vpn,
     category: "موقع ويب",
     status: "مكتمل",
     date: "2024",
+    team: vpnTeamData.ar,
   },
 
-  // RAVECAR
+
   {
     id: "ravecar_platform",
     slug: "ravecar-car-rental-platform",
@@ -676,7 +829,14 @@ const projectsAR = [
     coverImage: ravecarImages.home,
     fullDescription:
       "RAVECAR هي منصة ويب مخصصة لكراء السيارات بالمغرب، تربط وكالات الكراء بالزبناء الباحثين عن سيارات موثوقة. الزبون يمكنه تصفح السيارات مع فلاتر متقدمة، مشاهدة صفحة التفاصيل مع سلايدر للصور، اختيار تاريخ البداية والنهاية، والحجز عبر WhatsApp. الوكالات لديها لوحة تحكم آمنة تشمل التسجيل والتحقق عبر كود OTP بالـ Email (PHPMailer)، إضافة/تعديل السيارات عبر نموذج متعدد المراحل، رفع الصور، وإدارة حالة التوفر.",
-    technologies: ["PHP (Native)", "JavaScript", "MySQL", "PHPMailer", "HTML", "CSS"],
+    technologies: [
+      "PHP (Native)",
+      "JavaScript",
+      "MySQL",
+      "PHPMailer",
+      "HTML",
+      "CSS",
+    ],
     features: [
       "نظام أدوار متعددة (زبون / وكالة)",
       "تسجيل وكالة مع معلومات + رفع الشعار",
@@ -690,29 +850,77 @@ const projectsAR = [
       "نموذج متعدد المراحل لإضافة/تعديل السيارة",
     ],
     gallery: [
-      { image: ravecarImages.home, title: "الرئيسية — كتالوج السيارات", description: "كتالوج عام يعرض السيارات على شكل بطاقات مع أهم المعلومات." },
-      { image: ravecarImages.details, title: "تفاصيل السيارة", description: "صفحة تفاصيل تحتوي على سلايدر صور ومواصفات وسعر اليوم وحالة التوفر." },
-      { image: ravecarImages.reserve, title: "الحجز", description: "اختيار تاريخ البداية والنهاية ثم الحجز عبر WhatsApp للتواصل بسرعة." },
-      { image: ravecarImages.login, title: "تسجيل الدخول", description: "واجهة تسجيل الدخول للوصول للخصائص المحمية ولوحة التحكم." },
-      { image: ravecarImages.signup, title: "تسجيل الوكالة", description: "نموذج تسجيل وكالة مع معلومات العمل وروابط التواصل ورفع الشعار." },
-      { image: ravecarImages.otpEmail, title: "التحقق عبر البريد (OTP)", description: "إرسال كود تحقق OTP عبر البريد لتأمين الحساب." },
-      { image: ravecarImages.dashboardAgency, title: "لوحة تحكم الوكالة", description: "إدارة الإعلانات والكراءات: الحالة، التواريخ، والإجراءات." },
-      { image: ravecarImages.addVehicle, title: "إضافة سيارة (مراحل متعددة)", description: "نموذج على مراحل لإضافة سيارة: الفئة/الماركة، المواصفات، التجهيزات، التوفر/السعر، الصور." },
-      { image: ravecarImages.editVehicle, title: "تعديل سيارة", description: "تعديل بيانات السيارة مع تعبئة تلقائية للحقول." },
-      { image: ravecarImages.about, title: "حول المنصة", description: "صفحة تقدم فكرة المنصة ورسالتها وما تقدمه للوكالات والزبناء." },
-      { image: ravecarImages.contact, title: "تواصل", description: "صفحة تواصل تحتوي على نموذج لإرسال الاستفسارات." },
+      {
+        image: ravecarImages.home,
+        title: "الرئيسية — كتالوج السيارات",
+        description:
+          "كتالوج عام يعرض السيارات على شكل بطاقات مع أهم المعلومات.",
+      },
+      {
+        image: ravecarImages.details,
+        title: "تفاصيل السيارة",
+        description:
+          "صفحة تفاصيل تحتوي على سلايدر صور ومواصفات وسعر اليوم وحالة التوفر.",
+      },
+      {
+        image: ravecarImages.reserve,
+        title: "الحجز",
+        description:
+          "اختيار تاريخ البداية والنهاية ثم الحجز عبر WhatsApp للتواصل بسرعة.",
+      },
+      {
+        image: ravecarImages.login,
+        title: "تسجيل الدخول",
+        description: "واجهة تسجيل الدخول للوصول للخصائص المحمية ولوحة التحكم.",
+      },
+      {
+        image: ravecarImages.signup,
+        title: "تسجيل الوكالة",
+        description:
+          "نموذج تسجيل وكالة مع معلومات العمل وروابط التواصل ورفع الشعار.",
+      },
+      {
+        image: ravecarImages.otpEmail,
+        title: "التحقق عبر البريد (OTP)",
+        description: "إرسال كود تحقق OTP عبر البريد لتأمين الحساب.",
+      },
+      {
+        image: ravecarImages.dashboardAgency,
+        title: "لوحة تحكم الوكالة",
+        description: "إدارة الإعلانات والكراءات: الحالة، التواريخ، والإجراءات.",
+      },
+      {
+        image: ravecarImages.addVehicle,
+        title: "إضافة سيارة (مراحل متعددة)",
+        description:
+          "نموذج على مراحل لإضافة سيارة: الفئة/الماركة، المواصفات، التجهيزات، التوفر/السعر، الصور.",
+      },
+      {
+        image: ravecarImages.editVehicle,
+        title: "تعديل سيارة",
+        description: "تعديل بيانات السيارة مع تعبئة تلقائية للحقول.",
+      },
+      {
+        image: ravecarImages.about,
+        title: "حول المنصة",
+        description:
+          "صفحة تقدم فكرة المنصة ورسالتها وما تقدمه للوكالات والزبناء.",
+      },
+      {
+        image: ravecarImages.contact,
+        title: "تواصل",
+        description: "صفحة تواصل تحتوي على نموذج لإرسال الاستفسارات.",
+      },
     ],
     links: projectLinks.ravecar,
     category: "تطبيق ويب",
     status: "مكتمل",
     date: "2026",
-   team : ravecarTeamData.ar
+    team: ravecarTeamData.ar,
   },
 ];
 
-/* =========================
-   6) META (SEPARÉ)
-   ========================= */
+
 const metaEN = {
   pageTitle: "Projects",
   pageSubtitle: "A selection of projects I've built recently.",
@@ -733,10 +941,9 @@ const metaEN = {
     email: "Email",
     phone: "Phone",
     github: "GitHub",
-    linkedin: "LinkedIn"
+    linkedin: "LinkedIn",
   },
 };
-
 
 const metaFR = {
   pageTitle: "Projets",
@@ -758,10 +965,9 @@ const metaFR = {
     email: "Email",
     phone: "Téléphone",
     github: "GitHub",
-    linkedin: "LinkedIn"
+    linkedin: "LinkedIn",
   },
 };
-
 
 const metaAR = {
   pageTitle: "المشاريع",
@@ -782,16 +988,14 @@ const metaAR = {
     email: "البريد الإلكتروني",
     phone: "الهاتف",
     github: "GitHub",
-    linkedin: "LinkedIn"
+    linkedin: "LinkedIn",
   },
 };
 
-
-
 const projectsData = {
-  en: { meta: metaEN, items: projectsEN  },
+  en: { meta: metaEN, items: projectsEN },
   fr: { meta: metaFR, items: projectsFR },
-  ar: { meta: metaAR, items: projectsAR  },
+  ar: { meta: metaAR, items: projectsAR },
 };
 
 export default projectsData;
