@@ -101,10 +101,8 @@ const ravecarImages = {
   home: `${base}images/ravecar/home.PNG`,
   details: `${base}images/ravecar/voirdetailsclient.PNG`,
   reserve: `${base}images/ravecar/reserver.PNG`,
-
   login: `${base}images/ravecar/signup.PNG`,
   signup: `${base}images/ravecar/inscription.PNG`,
-
   otpEmail: `${base}images/ravecar/email.PNG`,
   dashboardAgency: `${base}images/ravecar/homeagence.PNG`,
   addVehicle: `${base}images/ravecar/addvehicule.PNG`,
