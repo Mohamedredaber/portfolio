@@ -3,20 +3,24 @@ name: Deploy React App to GitHub Pages
 on:
   push:
     branches:
-      - main  # Déploiement à chaque push sur main
+      - main # Déploiement à chaque push sur main
 
-      
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '20'  # version de Node.js
+          node-version: "20" # version de Node.js
 
       - name: Install dependencies
         run: npm install
@@ -27,5 +31,5 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # branche de déploiement
-          folder: build
+          branch: gh-pages # branche de déploiement
+          folder: dist
