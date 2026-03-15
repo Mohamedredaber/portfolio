@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { updateLanguage } from "../../../features/language/languageslice";
-import Logo from "../logo/logo";
+import Logo from "../logo/Logo";
 import "./Header.css";
 
 
