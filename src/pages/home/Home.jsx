@@ -19,7 +19,7 @@ export default function Home() {
           <div className="avatar-glow">
             <div className="avatar-ring">
               <img
-                src={`${base}images/profile/myprofile.PNG`}
+                src="./images/profile/myprofile.PNG"
                 alt="Mohamed Reda Berhouma"
                 className="avatar-img"
                 loading="eager"
