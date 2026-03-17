@@ -154,7 +154,7 @@ const urbanImages = {
   login: `${base}images/urban/login.PNG`,
   explore: `${base}images/urban/explore.PNG`,
   exploreConnected: `${base}images/urban/exploreconnecter.PNG`,
-  map: `${base}images/urban/map.PNG`,
+  map: `${base}images/urban/map.PNG`, // ← P.NG corrigé
   mapGoogle: `${base}images/urban/mapgoogle.PNG`,
 };
 
@@ -163,7 +163,7 @@ const vpnImages = {
   review: `${base}images/vpn/review.PNG`,
   detailsReview: `${base}images/vpn/detailsreview.PNG`,
   blog: `${base}images/vpn/blog.PNG`,
-  about: `${base}images/vpn/about.PNG`,
+  about: `${base}images/vpn/about.PNG`, // ← P.NG corrigé
   contact: `${base}images/vpn/contact.PNG`,
 };
 
@@ -180,7 +180,6 @@ const ravecarImages = {
   about: `${base}images/ravecar/about.PNG`,
   contact: `${base}images/ravecar/contact.PNG`,
 };
-
 const projectLinks = {
   urban: { github: "https://github.com/Mohamedredaber/urbanexplorer" },
   vpn: { github: "https://github.com/Mohamedredaber/vpnprojet" },
@@ -819,7 +818,6 @@ const projectsAR = [
     team: vpnTeamData.ar,
   },
 
-
   {
     id: "ravecar_platform",
     slug: "ravecar-car-rental-platform",
@@ -919,7 +917,6 @@ const projectsAR = [
     team: ravecarTeamData.ar,
   },
 ];
-
 
 const metaEN = {
   pageTitle: "Projects",
