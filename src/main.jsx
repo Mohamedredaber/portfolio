@@ -7,7 +7,7 @@ import { store } from "./app/store.jsx";
 import "./index.css";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <HashRouter basename="/portfolio/">
+    <HashRouter>
       <Provider store={store}>
         <App />
       </Provider>
