@@ -5,7 +5,6 @@ import BtnDownload from "../../compnents/common/BtnDownload";
 import { useSelector } from "react-redux";
 import "./Home.css";
 const base = import.meta.env.BASE_URL;
-
 export default function Home() {
   const lang = useSelector((state) => state.language.langue) || "en";
 
@@ -19,7 +18,7 @@ export default function Home() {
           <div className="avatar-glow">
             <div className="avatar-ring">
               <img
-                src="./images/profile/myprofile.PNG"
+                src={`${base}images/profile/myprofile.PNG`}
                 alt="Mohamed Reda Berhouma"
                 className="avatar-img"
                 loading="eager"
