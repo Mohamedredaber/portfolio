@@ -148,37 +148,37 @@ const vpnTeamData = {
 const base = import.meta.env.BASE_URL;
 
 const urbanImages = {
-  about: `${base}images/urban/about.PNG`,
-  home: `${base}images/urban/home.PNG`,
-  create: `${base}images/urban/create.PNG`,
-  login: `${base}images/urban/login.PNG`,
-  explore: `${base}images/urban/explore.PNG`,
-  exploreConnected: `${base}images/urban/exploreconnecter.PNG`,
-  map: `${base}images/urban/map.PNG`,
-  mapGoogle: `${base}images/urban/mapgoogle.PNG`,
+  about: `${base}images/urban/about.png`,
+  home: `${base}images/urban/home.png`,
+  create: `${base}images/urban/create.png`,
+  login: `${base}images/urban/login.png`,
+  explore: `${base}images/urban/explore.png`,
+  exploreConnected: `${base}images/urban/exploreconnecter.png`,
+  map: `${base}images/urban/map.png`,
+  mapGoogle: `${base}images/urban/mapgoogle.png`,
 };
 
 const vpnImages = {
-  home: `${base}images/vpn/home.PNG`,
-  review: `${base}images/vpn/review.PNG`,
-  detailsReview: `${base}images/vpn/detailsreview.PNG`,
-  blog: `${base}images/vpn/blog.PNG`,
-  about: `${base}images/vpn/about.PNG`,
-  contact: `${base}images/vpn/contact.PNG`,
+  home: `${base}images/vpn/home.png`,
+  review: `${base}images/vpn/review.png`,
+  detailsReview: `${base}images/vpn/detailsreview.png`,
+  blog: `${base}images/vpn/blog.png`,
+  about: `${base}images/vpn/about.png`,
+  contact: `${base}images/vpn/contact.png`,
 };
 
 const ravecarImages = {
-  home: `${base}images/ravecar/home.PNG`,
-  details: `${base}images/ravecar/voirdetailsclient.PNG`,
-  reserve: `${base}images/ravecar/reserver.PNG`,
-  login: `${base}images/ravecar/signup.PNG`,
-  signup: `${base}images/ravecar/inscription.PNG`,
-  otpEmail: `${base}images/ravecar/email.PNG`,
-  dashboardAgency: `${base}images/ravecar/homeagence.PNG`,
-  addVehicle: `${base}images/ravecar/addvehicule.PNG`,
-  editVehicle: `${base}images/ravecar/modifierarticle.PNG`,
-  about: `${base}images/ravecar/about.PNG`,
-  contact: `${base}images/ravecar/contact.PNG`,
+  home: `${base}images/ravecar/home.png`,
+  details: `${base}images/ravecar/voirdetailsclient.png`,
+  reserve: `${base}images/ravecar/reserver.png`,
+  login: `${base}images/ravecar/signup.png`,
+  signup: `${base}images/ravecar/inscription.png`,
+  otpEmail: `${base}images/ravecar/email.png`,
+  dashboardAgency: `${base}images/ravecar/homeagence.png`,
+  addVehicle: `${base}images/ravecar/addvehicule.png`,
+  editVehicle: `${base}images/ravecar/modifierarticle.png`,
+  about: `${base}images/ravecar/about.png`,
+  contact: `${base}images/ravecar/contact.png`,
 };
 
 const projectLinks = {
