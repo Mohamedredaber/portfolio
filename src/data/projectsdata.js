@@ -71,7 +71,115 @@ const ravecarTeamData = {
     ],
   },
 };
+const backofficeTeamData = {
+  ar: {
+    title: "فريق العمل",
+    subtitle: "هذا المشروع تم إنجازه بشكل جماعي ضمن فريق تطوير backoffice",
 
+    members: [
+      {
+        id: 1,
+        name: "محمد رضا برحومة",
+        role: "مطور ويب (Backend & Frontend)",
+        description:
+          "ساهم في تطوير منصة backoffice من حيث نظام الإشعارات التلقائية، لوحة التحليلات، إدارة المهام، وهيكلة Redux.",
+        contact: {
+          email: "",
+          phone: "",
+          github: "https://github.com/Mohamedredaber",
+          linkedin: "",
+        },
+        avatar: "",
+      },
+      {
+        id: 2,
+        name: "محمد الصمدي",
+        role: "مطور ويب (Backend & Frontend)",
+        description:
+          "ساهم في تطوير منصة backoffice من حيث وحدات CRM، إدارة المخزون، الوثائق المالية، والهيكلة العامة للمشروع.",
+        contact: {
+          email: "",
+          phone: "",
+          github: "",
+          linkedin: "https://www.linkedin.com/in/mohamed-samadi-11146b384/",
+        },
+        avatar: "",
+      },
+    ],
+  },
+
+  fr: {
+    title: "Équipe du projet",
+    subtitle: "Ce projet a été réalisé en collaboration par l'équipe backoffice",
+
+    members: [
+      {
+        id: 1,
+        name: "Mohamed Reda Berhouma",
+        role: "Développeur Web (Backend & Frontend)",
+        description:
+          "A contribué au développement de la plateforme backoffice, notamment le système de notifications automatisées, le tableau de bord analytique, la gestion des tâches et l'architecture Redux.",
+        contact: {
+          email: "",
+          phone: "",
+          github: "https://github.com/Mohamedredaber",
+          linkedin: "",
+        },
+        avatar: "",
+      },
+      {
+        id: 2,
+        name: "Mohamed Samadi",
+        role: "Développeur Web (Backend & Frontend)",
+        description:
+          "A contribué au développement de la plateforme backoffice, notamment les modules CRM, la gestion du stock, les documents financiers et l'architecture générale du projet.",
+        contact: {
+          email: "",
+          phone: "",
+          github: "",
+          linkedin: "https://www.linkedin.com/in/mohamed-samadi-11146b384/",
+        },
+        avatar: "",
+      },
+    ],
+  },
+
+  en: {
+    title: "Project Team",
+    subtitle: "This project was developed collaboratively by the backoffice team",
+
+    members: [
+      {
+        id: 1,
+        name: "Mohamed Reda Berhouma",
+        role: "Web Developer (Backend & Frontend)",
+        description:
+          "Contributed to the development of the backoffice platform, including the automated notification system, analytics dashboard, task management, and Redux architecture.",
+        contact: {
+          email: "",
+          phone: "",
+          github: "https://github.com/Mohamedredaber",
+          linkedin: "",
+        },
+        avatar: "",
+      },
+      {
+        id: 2,
+        name: "Mohamed Samadi",
+        role: "Web Developer (Backend & Frontend)",
+        description:
+          "Contributed to the development of the backoffice platform, including CRM modules, stock management, financial documents, and overall project architecture.",
+        contact: {
+          email: "",
+          phone: "",
+          github: "",
+          linkedin: "https://www.linkedin.com/in/mohamed-samadi-11146b384/",
+        },
+        avatar: "",
+      },
+    ],
+  },
+};
 const vpnTeamData = {
   ar: {
     title: "فريق العمل",
@@ -157,7 +265,20 @@ const urbanImages = {
   map: `${base}images/urban/map.png`,
   mapGoogle: `${base}images/urban/mapgoogle.png`,
 };
-
+const backofficeImages = {
+  categoriesProducts: `${base}images/backoffice/categoriesproducts.png`,
+  cheques: `${base}images/backoffice/cheques.png`,
+  clients: `${base}images/backoffice/clients.png`,
+  credits: `${base}images/backoffice/credits.png`,
+  dashboard: `${base}images/backoffice/dashboars.PNG`,
+  document: `${base}images/backoffice/document.png`,
+  entreprise: `${base}images/backoffice/entreprise.png`,
+  fournisseur: `${base}images/backoffice/fournisseur.png`,
+  login: `${base}images/backoffice/login.png`,
+  notifications: `${base}images/backoffice/notificationspng.PNG`,
+  products: `${base}images/backoffice/products.png`,
+  taches: `${base}images/backoffice/taches.png`,
+};
 const vpnImages = {
   home: `${base}images/vpn/home.png`,
   review: `${base}images/vpn/review.png`,
@@ -182,14 +303,124 @@ const ravecarImages = {
 };
 
 const projectLinks = {
+  backoffice: { github: "https://github.com/mohamed-samadi/backoffice" },
   urban: { github: "https://github.com/Mohamedredaber/urbanexplorer" },
   vpn: { github: "https://github.com/Mohamedredaber/vpnprojet" },
   ravecar: {
     github: "https://github.com/Mohamedredaber/agences_location_platform",
   },
+
 };
 
 const projectsEN = [
+ {
+  id: "backoffice_management_system",
+  slug: "backoffice-management-system",
+  title: "Backoffice Management System",
+  shortDescription:
+    "A full ERP web application for SMEs covering CRM, stock, finance, tasks, and real-time analytics.",
+  coverImage: backofficeImages.dashboard,
+  fullDescription:
+    "Backoffice Management System is a comprehensive ERP web application built for small and medium enterprises. It centralizes business operations into a single platform: CRM (clients and suppliers), stock management with low-stock alerts, financial documents (invoices, quotes, delivery notes), cheque and credit tracking, task management with priorities and deadlines, and a real-time analytics dashboard. The application features an automated notification system that alerts users about critical events such as low stock, overdue tasks, and payment deadlines.",
+  technologies: ["React", "Redux Toolkit", "Laravel", "MySQL", "Sanctum", "Docker"],
+  features: [
+    "Real-time analytics dashboard (revenue, document stats, alerts)",
+    "CRM: client and supplier management with ICE, status, and filters",
+    "Task management with priority, deadline, category, and status tracking",
+    "Stock management with low-stock alerts and product categories",
+    "Financial documents: invoices, quotes, delivery notes (TTC/HT/TVA)",
+    "Cheque management: non-encaissé, encaissé, impayé, échéance proche",
+    "Credit tracking: en cours, soldé, en retard (MAD)",
+    "Automated in-app notification system (stock, tasks, payments)",
+    "Company profile configuration (ICE, RC, IF, coordinates)",
+    "Authentication with protected admin dashboard",
+  ],
+  gallery: [
+    {
+      image: backofficeImages.dashboard,
+      title: "Dashboard",
+      description:
+        "Main analytics dashboard showing active clients, revenue (MAD), low stock alerts, overdue tasks, and monthly revenue chart with document distribution.",
+    },
+    {
+      image: backofficeImages.clients,
+      title: "Clients",
+      description:
+        "Client management page with ICE number, status (active/inactive), phone, email, and full CRUD actions.",
+    },
+    {
+      image: backofficeImages.fournisseur,
+      title: "Suppliers",
+      description:
+        "Supplier management with city filter, ICE, status indicators, and total/active/city count summary cards.",
+    },
+    {
+      image: backofficeImages.taches,
+      title: "Tasks",
+      description:
+        "Task management with status (to-do, in progress, completed), priority (high/urgent), deadline, category, and client assignment.",
+    },
+    // {
+    //   image: backofficeImages.categoriestaches,
+    //   title: "Task Categories",
+    //   description:
+    //     "Task category management with color coding, status, and creation date.",
+    // },
+    {
+      image: backofficeImages.products,
+      title: "Products",
+      description:
+        "Product catalog with stock level, price (MAD), category, supplier, low-stock badge, and multi-filter search.",
+    },
+    {
+      image: backofficeImages.categoriesProducts,
+      title: "Product Categories",
+      description:
+        "Product category management showing linked product count, active/inactive status, and quick actions.",
+    },
+    {
+      image: backofficeImages.document,
+      title: "Financial Documents",
+      description:
+        "Document registry (invoices, quotes, delivery notes) with TTC/HT totals, payment status, and encaissement tracking.",
+    },
+    {
+      image: backofficeImages.cheques,
+      title: "Cheques",
+      description:
+        "Cheque management with status breakdown: non-encaissé, encaissé, impayé, annulé, and échéance proche alerts.",
+    },
+    {
+      image: backofficeImages.credits,
+      title: "Credits",
+      description:
+        "Credit tracking with MAD amounts for total engaged, remaining (en cours), collected (soldés), and overdue (en retard).",
+    },
+    {
+      image: backofficeImages.notifications,
+      title: "Notifications",
+      description:
+        "Automated notification center with categorized alerts (Stock, Tasks, Cheques, Credits, Documents) and mark-as-read / delete actions.",
+    },
+    {
+      image: backofficeImages.entreprise,
+      title: "Company Profile",
+      description:
+        "Company configuration page with legal identifiers (ICE, RC, IF), contact info, and address details.",
+    },
+    {
+      image: backofficeImages.login,
+      title: "Login",
+      description:
+        "Secure admin login page with email and password authentication, restricted to authorized administrators.",
+    },
+  ],
+  links : projectLinks.backoffice,
+  category: "Web Application",
+  status: "Completed",
+  date: "2026",
+  team : backofficeTeamData.en
+},
   {
     id: "urban_explorer",
     slug: "urban-explorer",
@@ -437,7 +668,114 @@ const projectsEN = [
    4) ITEMS (FR) (SEPARÉS)
    ========================= */
 const projectsFR = [
-  // Urban
+{
+  id: "backoffice_management_system",
+  slug: "backoffice-management-system",
+  title: "Backoffice Management System",
+  shortDescription:
+    "Application ERP complète pour PME couvrant CRM, stock, finance, tâches et analytics en temps réel.",
+  coverImage: backofficeImages.dashboard,
+  fullDescription:
+    "Backoffice Management System est une application ERP web complète conçue pour les petites et moyennes entreprises. Elle centralise les opérations métier en une seule plateforme : CRM (clients et fournisseurs), gestion du stock avec alertes de stock faible, documents financiers (factures, devis, bons de livraison), suivi des chèques et crédits, gestion des tâches avec priorités et échéances, et un tableau de bord analytique en temps réel. Le système embarque un moteur de notifications automatisées alertant sur les événements critiques : stock faible, tâches en retard, échéances de paiement.",
+  technologies: ["React", "Redux Toolkit", "Laravel", "MySQL", "Sanctum", "Docker"],
+  features: [
+    "Tableau de bord analytique en temps réel (revenus, alertes, documents)",
+    "CRM : gestion clients et fournisseurs avec ICE, statut et filtres",
+    "Gestion des tâches : priorité, échéance, catégorie, statut",
+    "Gestion du stock avec alertes stock faible et catégories produits",
+    "Documents financiers : factures, devis, bons de livraison (TTC/HT/TVA)",
+    "Gestion des chèques : non encaissé, encaissé, impayé, échéance proche",
+    "Suivi des crédits : en cours, soldés, en retard (MAD)",
+    "Système de notifications automatisées (stock, tâches, paiements)",
+    "Configuration entreprise (ICE, RC, IF, coordonnées)",
+    "Authentification sécurisée avec tableau de bord protégé",
+  ],
+  gallery: [
+    {
+      image: backofficeImages.dashboard,
+      title: "Tableau de bord",
+      description:
+        "Vue générale ERP avec KPIs clés (clients actifs, chiffre d'affaires, stock faible, tâches en retard), graphique des revenus mensuels et répartition des documents.",
+    },
+    {
+      image: backofficeImages.clients,
+      title: "Clients",
+      description:
+        "Gestion des clients avec numéro ICE, statut actif/inactif, téléphone, email et actions CRUD complètes.",
+    },
+    {
+      image: backofficeImages.fournisseur,
+      title: "Fournisseurs",
+      description:
+        "Gestion des fournisseurs avec filtre par ville, ICE, indicateurs de statut et cartes de synthèse.",
+    },
+    {
+      image: backofficeImages.taches,
+      title: "Tâches",
+      description:
+        "Gestion des tâches avec statut (à faire, en cours, terminé), priorité, échéance, catégorie et client associé.",
+    },
+    // {
+    //   image: backofficeImages.categoriestaches,
+    //   title: "Catégories de tâches",
+    //   description:
+    //     "Gestion des catégories de tâches avec code couleur, statut et date de création.",
+    // },
+    {
+      image: backofficeImages.products,
+      title: "Produits",
+      description:
+        "Catalogue produits avec niveau de stock, prix en MAD, catégorie, fournisseur, badge stock faible et filtres avancés.",
+    },
+    {
+      image: backofficeImages.categoriesProducts,
+      title: "Catégories de produits",
+      description:
+        "Gestion des catégories produits avec nombre de produits liés, statut actif/inactif et actions rapides.",
+    },
+    {
+      image: backofficeImages.document,
+      title: "Documents financiers",
+      description:
+        "Registre des documents (factures, devis, bons de livraison) avec totaux TTC/HT, statut paiement et suivi encaissement.",
+    },
+    {
+      image: backofficeImages.cheques,
+      title: "Chèques",
+      description:
+        "Gestion des chèques avec répartition par statut : non encaissés, encaissés, impayés, annulés et échéances proches.",
+    },
+    {
+      image: backofficeImages.credits,
+      title: "Crédits",
+      description:
+        "Suivi des crédits en MAD : montant total engagé, restant (en cours), encaissé (soldés) et en retard.",
+    },
+    {
+      image: backofficeImages.notifications,
+      title: "Notifications",
+      description:
+        "Centre de notifications automatisées avec alertes catégorisées (Stock, Tâches, Chèques, Crédits, Documents) et actions marquer lu / supprimer.",
+    },
+    {
+      image: backofficeImages.entreprise,
+      title: "Mon entreprise",
+      description:
+        "Page de configuration de l'entreprise avec identifiants légaux (ICE, RC, IF), coordonnées et adresse.",
+    },
+    {
+      image: backofficeImages.login,
+      title: "Connexion",
+      description:
+        "Page de connexion sécurisée avec authentification email/mot de passe, réservée aux administrateurs.",
+    },
+  ],
+  links : projectLinks.backoffice,
+  category: "Application Web",
+  status: "Terminé",
+  date: "2026",
+  team : backofficeTeamData.fr
+},
   {
     id: "urban_explorer",
     slug: "urban-explorer",
@@ -683,7 +1021,114 @@ const projectsFR = [
 ];
 
 const projectsAR = [
-  // Urban
+  {
+  id: "backoffice_management_system",
+  slug: "backoffice-management-system",
+  title: "Backoffice Management System — نظام إدارة الأعمال",
+  shortDescription:
+    "تطبيق ERP متكامل للمقاولات الصغيرة والمتوسطة يشمل CRM والمخزون والمالية والمهام والتحليلات.",
+  coverImage: backofficeImages.dashboard,
+  fullDescription:
+    "Backoffice Management System هو تطبيق ERP ويب متكامل مصمم للمقاولات الصغيرة والمتوسطة. يجمع العمليات التجارية في منصة واحدة: CRM (الزبناء والموردون)، إدارة المخزون مع تنبيهات المخزون المنخفض، الوثائق المالية (الفواتير، العروض، بوائق التسليم)، متابعة الشيكات والقروض، إدارة المهام بالأولويات والمواعيد، ولوحة تحكم تحليلية في الوقت الفعلي. يتضمن النظام محرك إشعارات تلقائي يُنبّه عن الأحداث الحرجة: مخزون منخفض، مهام متأخرة، مواعيد الدفع.",
+  technologies: ["React", "Redux Toolkit", "Laravel", "MySQL", "Sanctum", "Docker"],
+  features: [
+    "لوحة تحكم تحليلية في الوقت الفعلي (الإيرادات، التنبيهات، الوثائق)",
+    "CRM: إدارة الزبناء والموردين مع ICE والحالة والفلاتر",
+    "إدارة المهام: الأولوية، الموعد النهائي، الفئة، الحالة",
+    "إدارة المخزون مع تنبيهات المخزون المنخفض وفئات المنتجات",
+    "الوثائق المالية: فواتير، عروض، بوائق تسليم (TTC/HT/TVA)",
+    "إدارة الشيكات: غير محصّل، محصّل، غير مدفوع، قريب الاستحقاق",
+    "متابعة القروض: جارية، مسوّاة، متأخرة (MAD)",
+    "نظام إشعارات تلقائية (المخزون، المهام، المدفوعات)",
+    "إعداد بيانات الشركة (ICE, RC, IF، العنوان)",
+    "مصادقة آمنة مع لوحة تحكم محمية",
+  ],
+  gallery: [
+    {
+      image: backofficeImages.dashboard,
+      title: "لوحة التحكم",
+      description:
+        "نظرة عامة على ERP مع مؤشرات الأداء الرئيسية (الزبناء النشطون، رقم الأعمال، المخزون المنخفض، المهام المتأخرة) ومخطط الإيرادات الشهرية.",
+    },
+    {
+      image: backofficeImages.clients,
+      title: "الزبناء",
+      description:
+        "إدارة الزبناء مع رقم ICE والحالة والهاتف والبريد الإلكتروني وعمليات CRUD الكاملة.",
+    },
+    {
+      image: backofficeImages.fournisseur,
+      title: "الموردون",
+      description:
+        "إدارة الموردين مع فلتر المدينة ورقم ICE ومؤشرات الحالة وبطاقات الملخص.",
+    },
+    {
+      image: backofficeImages.taches,
+      title: "المهام",
+      description:
+        "إدارة المهام بالحالة (للتنفيذ، قيد التنفيذ، مكتملة) والأولوية والموعد النهائي والفئة والزبون.",
+    },
+    // {
+    //   image: backofficeImages.categoriestaches,
+    //   title: "فئات المهام",
+    //   description:
+    //     "إدارة فئات المهام مع الترميز اللوني والحالة وتاريخ الإنشاء.",
+    // },
+    {
+      image: backofficeImages.products,
+      title: "المنتجات",
+      description:
+        "كتالوج المنتجات مع مستوى المخزون والسعر بالدرهم والفئة والمورد وشارة المخزون المنخفض.",
+    },
+    {
+      image: backofficeImages.categoriesProducts,
+      title: "فئات المنتجات",
+      description:
+        "إدارة فئات المنتجات مع عدد المنتجات المرتبطة والحالة والإجراءات السريعة.",
+    },
+    {
+      image: backofficeImages.document,
+      title: "الوثائق المالية",
+      description:
+        "سجل الوثائق (فواتير، عروض، بوائق تسليم) مع إجماليات TTC/HT وحالة الدفع ومتابعة التحصيل.",
+    },
+    {
+      image: backofficeImages.cheques,
+      title: "الشيكات",
+      description:
+        "إدارة الشيكات مع توزيع الحالات: غير محصّلة، محصّلة، غير مدفوعة، ملغاة، وقريبة الاستحقاق.",
+    },
+    {
+      image: backofficeImages.credits,
+      title: "القروض",
+      description:
+        "متابعة القروض بالدرهم: إجمالي المُلتزَم، الباقي (جارية)، المحصّل (مسوّاة)، والمتأخرة.",
+    },
+    {
+      image: backofficeImages.notifications,
+      title: "الإشعارات",
+      description:
+        "مركز الإشعارات التلقائية مع تنبيهات مصنّفة (المخزون، المهام، الشيكات، القروض، الوثائق) وإجراءات التحديد كمقروء والحذف.",
+    },
+    {
+      image: backofficeImages.entreprise,
+      title: "الشركة",
+      description:
+        "صفحة إعداد بيانات الشركة مع المعرفات القانونية (ICE, RC, IF) ومعلومات التواصل والعنوان.",
+    },
+    {
+      image: backofficeImages.login,
+      title: "تسجيل الدخول",
+      description:
+        "صفحة دخول آمنة بالبريد الإلكتروني وكلمة المرور، مخصصة للمشرفين فقط.",
+    },
+  ],
+      links: projectLinks.backoffice,
+    category: "تطبيق ويب",
+    status: "مكتمل",
+    date: "2025",
+
+},
   {
     id: "urban_explorer",
     slug: "urban-explorer",
@@ -756,6 +1201,7 @@ const projectsAR = [
     category: "تطبيق ويب",
     status: "مكتمل",
     date: "2025",
+      team : backofficeTeamData.ar
   },
 
   // VPN
@@ -818,7 +1264,6 @@ const projectsAR = [
     date: "2024",
     team: vpnTeamData.ar,
   },
-
 
   {
     id: "ravecar_platform",
@@ -919,7 +1364,6 @@ const projectsAR = [
     team: ravecarTeamData.ar,
   },
 ];
-
 
 const metaEN = {
   pageTitle: "Projects",
